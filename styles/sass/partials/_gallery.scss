@@ -4,5 +4,11 @@
     background-color: variables.$ice;
     .gallery-flex {
     display: flex;
+    flex-wrap: wrap;
+    li {
+        width: calc((100% / 3) - 30px);
+        margin: 30px 15px;
     }
+    }
+    
 }

@@ -1,0 +1,23 @@
+@use "./variables";
+
+.fa-house,
+.fa-people-group,
+.fa-file,
+.fa-phone-flip {
+    padding: 5px;
+    background-color: variables.$bright-yellow;
+    border-radius: 50%;
+    
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+        width: 40%;
+        a {
+            display: flex;
+        }
+    }
+}
