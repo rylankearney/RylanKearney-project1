@@ -47,6 +47,13 @@ h1 {
     color: variables.$black;
 }
 
+h2 {
+    font-family: variables.$heading-font;
+    font-size: 33px;
+    line-height: 58px;
+    letter-spacing: 2.1;
+}
+
 .logo {
     font-family: variables.$heading-font;
     font-size: 22px;

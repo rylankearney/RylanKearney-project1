@@ -1,0 +1,8 @@
+@use "./variables";
+
+.gallery {
+    background-color: variables.$ice;
+    .gallery-flex {
+    display: flex;
+    }
+}

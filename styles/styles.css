@@ -271,6 +271,13 @@ h1 {
   color: #151514;
 }
 
+h2 {
+  font-family: "Kumar One";
+  font-size: 33px;
+  line-height: 58px;
+  letter-spacing: 2.1;
+}
+
 .logo {
   font-family: "Kumar One";
   font-size: 22px;
@@ -358,6 +365,25 @@ button {
 }
 .home-desktop-nav a:hover {
   border-bottom: 4px solid #f8fb05;
+}
+
+.home-article-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.home-article-flex img {
+  -webkit-box-shadow: -10px 10px 1px #f8fb05;
+          box-shadow: -10px 10px 1px #f8fb05;
+}
+
+.gallery {
+  background-color: #E0FDDF;
+}
+.gallery .gallery-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 footer {

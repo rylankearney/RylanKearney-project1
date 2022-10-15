@@ -1,0 +1,8 @@
+@use "./variables";
+
+.home-article-flex {
+    display: flex;
+    img {
+        box-shadow: -10px 10px 1px variables.$bright-yellow;
+    }
+}
