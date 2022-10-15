@@ -1,1 +1,32 @@
-@use "./variables"
+@use "./variables";
+
+.home-header {
+    background-image: url(../assets/header-home.jpg);
+    background-size: cover;
+    width: 100%;
+    h1 {
+        margin: 50px;
+        line-height: 1;
+        span {
+            display: block;
+        }
+    }
+   img {
+    width:45%;
+    }
+}
+
+
+.home-desktop-nav {
+    ul {
+    display: flex;
+    justify-content: end;
+    }
+    a {
+    padding: 5px;
+    margin: 30px 15px 5px;
+    &:hover {
+        border-bottom: 4px solid variables.$bright-yellow;
+    }
+    }
+} 
