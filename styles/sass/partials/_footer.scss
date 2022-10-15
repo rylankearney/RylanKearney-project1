@@ -1,0 +1,11 @@
+@use "./variables";
+
+footer {
+    background: variables.$black;
+    p {
+        text-align: center;
+        padding: 20px;
+        margin: 0;
+        color: variables.$white;
+    }
+}

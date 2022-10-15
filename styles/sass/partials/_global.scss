@@ -5,3 +5,13 @@
     max-width: 1200px;
     margin: 0 auto;
 }
+
+button {
+    font-family: variables.$heading-font;
+    text-align: center;
+    color: variables.$white;
+    background: variables.$evergreen;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: uppercase;
+}
