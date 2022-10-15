@@ -1,0 +1,35 @@
+@use "./variables";
+
+//Google fonts
+
+//H1 font
+/*@font-face {
+font-family: "Kumar One";*/
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One&display=swap');
+
+//H2, h3, h4 font
+/*@font-face {
+font-family: "Kumar One Outline";*/
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One+Outline&display=swap');
+
+//nav&body font
+/*@font-face {
+font-family: "Lato";*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+//font variables
+
+$h1-font: 'Kumar One Outline', cursive;
+$heading-font: 'Kumar One', cursive;
+$body-font: 'Lato', sans-serif;
+
+body {
+    font-family: variables.$body-font;
+    color: variables.$third;
+}
+
+h1 {
+    font-family: variables.$h1-font;
+    font-size: 68px;
+}
+
