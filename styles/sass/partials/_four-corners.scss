@@ -1,0 +1,40 @@
+@use "./variables";
+
+.corners {
+    background: variables.$ice;
+    height: 115vh;
+    position: relative;
+    .text-container-1 {
+        position:absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
+    }
+    .text-container-2 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50%;
+    }
+    .img-container-1 {
+        width: 50%;
+        img {
+            box-shadow: 10px 10px 1px variables.$bright-yellow;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    .img-container-2 {
+        width: 50%;
+        img {
+            display: block;
+            box-shadow: -10px 10px 1px variables.$bright-yellow;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 10;
+            }
+    }
+}
+

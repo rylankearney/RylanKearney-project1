@@ -392,6 +392,9 @@ button {
   width: calc(33.3333333333% - 30px);
   margin: 30px 15px;
 }
+.gallery .gallery-flex li img {
+  height: 325px;
+}
 
 .fa-house,
 .fa-people-group,
@@ -419,6 +422,54 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.search img {
+  width: 100%;
+}
+.search .search-text {
+  text-align: center;
+  width: 40%;
+}
+
+.corners {
+  background: #E0FDDF;
+  height: 115vh;
+  position: relative;
+}
+.corners .text-container-1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+}
+.corners .text-container-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+}
+.corners .img-container-1 {
+  width: 50%;
+}
+.corners .img-container-1 img {
+  -webkit-box-shadow: 10px 10px 1px #f8fb05;
+          box-shadow: 10px 10px 1px #f8fb05;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.corners .img-container-2 {
+  width: 50%;
+}
+.corners .img-container-2 img {
+  display: block;
+  -webkit-box-shadow: -10px 10px 1px #f8fb05;
+          box-shadow: -10px 10px 1px #f8fb05;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
 }
 
 footer {
