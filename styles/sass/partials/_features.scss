@@ -1,10 +1,14 @@
 @use "./variables";
 
+#features {
+    height: 80vh;
+}
+
 .fa-house,
 .fa-people-group,
 .fa-file,
 .fa-phone-flip {
-    padding: 5px;
+    padding: 10px;
     background-color: variables.$bright-yellow;
     border-radius: 50%;
     
@@ -14,10 +18,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
     li {
         width: 40%;
+        margin: 60px 30px 30px;
         a {
             display: flex;
+            h2 {
+                padding-left: 10px;
+            }
         }
     }
 }

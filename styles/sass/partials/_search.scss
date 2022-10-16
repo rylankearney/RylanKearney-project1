@@ -1,11 +1,18 @@
 @use "./variables";
 
-.search {
+.search {    
     img {
-        width: 100%;
+    width: 100%;
     }
     .search-text {
         text-align: center;
         width: 40%;
+        height: 45vh;
+        h2 {
+            margin-top: 25px;
+        }
+        p {
+        margin: 20px;
+        }
     }
 }

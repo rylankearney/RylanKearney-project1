@@ -2,12 +2,14 @@
 
 .gallery {
     background-color: variables.$ice;
+    height: 70vh;
     .gallery-flex {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     li {
         width: calc((100% / 3) - 30px);
-        margin: 30px 15px;
+        margin: 100px 15px 0;
         img {
             height: 325px;
         }

@@ -1,8 +1,26 @@
 @use "./variables";
 
+#about {
+    height: 60vh;
+}
+
 .home-article-flex {
     display: flex;
+    align-items: center;
+    margin-top: 100px;
+    article {
+        margin-left: 40px;
+    }
+    p {
+        width: 80%;
+        margin-top: 20px;
+    }
+    button {
+        margin-top: 25px;
+    }
     img {
         box-shadow: -10px 10px 1px variables.$bright-yellow;
+        margin-right: 80px;
     }
 }
+
