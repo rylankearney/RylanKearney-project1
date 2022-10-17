@@ -1,5 +1,7 @@
 @use "./variables";
 
+//home page header styles
+
 .home-header {
     position: relative;
     background-image: url(../assets/header-home.jpg);
@@ -33,8 +35,47 @@
     a {
     padding: 5px;
     margin: 30px 15px 5px;
-    &:hover {
+    &:hover,
+    &:focus {
         border-bottom: 4px solid variables.$bright-yellow;
     }
     }
 } 
+
+//blog page header styles
+
+.blog-logo {
+    position: absolute;
+    top: 20px;
+    left: 75px;
+}
+
+.blog-menu {
+    display:flex;
+    justify-content: flex-end;
+    margin-right: 200px;
+    li {
+        margin-top: 20px;
+        a {
+        margin: 20px 20px 0;
+        padding: 0 5px;
+        &:hover,
+        &:focus {
+            border-bottom: 4px solid variables.$bright-yellow;
+        }
+    }
+}
+}
+
+#blog-header {
+    background-image: url(../assets/blog-image.jpg);
+    width: 100%;
+    height: 80vh;
+    h3 {
+        position: absolute;
+        top: 150px;
+        left: 300px;
+        font-family: variables.$h1-font;
+        font-size: 68px;
+    }
+}

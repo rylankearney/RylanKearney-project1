@@ -1,5 +1,7 @@
 @use "./variables";
 
+//home article styles
+
 #about {
     height: 60vh;
 }
@@ -23,4 +25,64 @@
         margin-right: 80px;
     }
 }
+
+//blog article styles
+
+.blog-body {
+    background: variables.$ice;
+    height: 400vh;
+    position: relative;
+    aside {
+        width: 30%;
+        position:absolute;
+        top: 650px;
+        right: 10px;
+        background-color: variables.$bright-yellow;
+        padding: 0 10px;
+    }
+}
+
+.aside-container {
+    position:relative;
+    .img {
+        position: absolute;
+        right: 5px;
+    }
+}
+
+.blog-image {
+    width: 98.7%;
+    box-shadow: 10px 10px 1px variables.$bright-yellow;
+}
+
+.blog-main {
+    width: 50%;
+    position: relative;
+    article {
+        position: absolute;
+        top: -200px;
+        background: variables.$white;
+        .blog-container {
+        padding-left: 150px;
+        border-right: 4px solid variables.$bright-yellow;
+        border-bottom: 4px solid variables.$bright-yellow;
+        }
+        span {
+            font-weight: bold;
+        }
+        h2, p {
+            padding: 20px;
+        }
+    }
+
+    .comments {
+        position: relative;
+        .comment-container {
+            position: absolute;
+            bottom: 10px;
+        }
+    }
+        
+}
+
 
