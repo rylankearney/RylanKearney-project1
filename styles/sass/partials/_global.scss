@@ -13,5 +13,10 @@ button {
     background: variables.$evergreen;
     border: none;
     padding: 10px 20px;
-    text-decoration: uppercase;
+    text-transform: uppercase;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
 }

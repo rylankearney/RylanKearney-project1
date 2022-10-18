@@ -1,0 +1,88 @@
+@use "./variables";
+
+
+
+#blog {
+    background: variables.$ice;
+}
+
+//post styles
+
+.blog-main {
+    display: flex;
+    justify-content: space-between;
+    .blog-entry {
+        width: 50%;
+        .blog-container {
+            background: variables.$white;
+            padding: 50px;
+            position: relative;
+            padding-top: 550px;
+            border-right: 5px solid variables.$bright-yellow;
+            border-bottom: 5px solid variables.$bright-yellow;
+            .blog-image {
+                width: 99.2%;
+                position: absolute;
+                top: -50px;
+                left: 0;
+                box-shadow: 10px 10px 1px variables.$bright-yellow;
+        }
+    }
+    }
+}
+
+//comment styles
+
+.comment-container {
+    margin-left: 50px;
+    width: 90%;
+    h4 {
+        margin-left: 70px;
+        margin-top: 40px;
+    }
+    button {
+        width: 100%;
+        margin: 30px 0;
+    }
+}
+
+.comment-flex {
+    display:flex;
+    margin: 40px 30px;
+
+    .davin-photo,
+    .lisa-photo {
+        margin: 30px;
+    }
+}
+
+//aside styles
+
+aside {
+    width: 25%;
+    height: 115vh;
+    background: variables.$bright-yellow;
+    margin-top: 100px;
+    .aside-img {
+        position: relative;
+        margin-bottom: 200px;
+        img {
+            width: 95%;
+            position: absolute;
+            right: 0;
+            top: -20px;
+            margin-bottom: 200px;
+        }
+    }
+}
+
+.aside-text {
+    padding: 200px 30px 0;
+    h4 {
+        margin-top: 20px;
+    }
+    .blog-list {
+        list-style-type: disc;
+    }
+
+}
