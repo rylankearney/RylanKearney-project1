@@ -4,24 +4,88 @@
 
 .comment-form {
     margin-left: 30px;
+    color: variables.$black;
+    input {
+        background: variables.$ice;
+        width: 46%;
+        border: none;
+        border-bottom: 2px solid variables.$black;
+        margin-right: 20px;
+        margin-bottom: 50px;
+        &::placeholder {
+            opacity: 1;
+            color: variables.$black;
+        }
+    }
+        .comment-box {
+            resize: none;
+            background: variables.$ice;
+            border: 2px solid variables.$black;
+            width: 100%;
+            &::placeholder {
+                opacity: 1;
+                color: variables.$black;
+            }
+        
+    }
 }
 
-input {
+// Contact page form
+#contact-main {
     background: variables.$ice;
+    height: 80vh;
+}
+
+.form-container {
+    background: variables.$white;
+    width: 60%;
+    z-index: 10;
+    padding: 50px;
+    box-shadow: 10px 10px 1px variables.$bright-yellow;
+    input {
     width: 46%;
     border: none;
+    background: variables.$white;
     border-bottom: 2px solid variables.$black;
     margin-right: 20px;
     margin-bottom: 50px;
+    &::placeholder {
+        opacity: 1;
+        color: variables.$black;
+    }
+}
 }
 
-textarea {
-    resize: none;
-    background: variables.$ice;
-    border: 2px solid variables.$black;
-    width: 100%;
-    ::placeholder {
-        margin: 20px;
+    .message-box {
+        resize: none;
+        background: variables.$white;
+        border: 2px solid variables.$black;
+        width: 94%;
+        &::placeholder {
+            opacity: 1;
+            color: variables.$black;
+        }
     }
 
+//Contact form flex
+
+.contact {
+    display: flex;
+    justify-content: space-between;
 }
+
+
+.socials {
+    display: flex;
+    li {
+        padding: 20px;
+        font-size: 1.5rem;
+        a {
+            color: variables.$evergreen;
+        }
+    }
+}
+
+.address {
+        padding-left: 20px;
+    }

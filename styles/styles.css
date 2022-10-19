@@ -270,6 +270,7 @@ h1 {
   font-family: "Kumar One Outline";
   font-size: 68px;
   color: #151514;
+  text-transform: uppercase;
 }
 
 h2,
@@ -393,13 +394,14 @@ textarea:focus {
   border-bottom: 4px solid #f8fb05;
 }
 
-.blog-logo {
+.logo {
   position: absolute;
   top: 20px;
   left: 75px;
 }
 
-.blog-menu {
+.blog-menu,
+.contact-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -408,14 +410,18 @@ textarea:focus {
           justify-content: flex-end;
   margin-right: 200px;
 }
-.blog-menu li {
+.blog-menu li,
+.contact-menu li {
   margin-top: 20px;
 }
-.blog-menu li a {
+.blog-menu li a,
+.contact-menu li a {
   margin: 20px 20px 0;
   padding: 0 5px;
 }
-.blog-menu li a:hover, .blog-menu li a:focus {
+.blog-menu li a:hover, .blog-menu li a:focus,
+.contact-menu li a:hover,
+.contact-menu li a:focus {
   border-bottom: 4px solid #f8fb05;
 }
 
@@ -431,6 +437,16 @@ textarea:focus {
   font-family: "Kumar One Outline";
   font-size: 68px;
   text-transform: capitalize;
+}
+
+#contact {
+  background-image: url(../assets/contact-image.jpg);
+  height: 78vh;
+}
+#contact h1 {
+  position: absolute;
+  top: 150px;
+  left: 150px;
 }
 
 #about {
@@ -659,9 +675,9 @@ aside .aside-img img {
 
 .comment-form {
   margin-left: 30px;
+  color: #151514;
 }
-
-input {
+.comment-form input {
   background: #E0FDDF;
   width: 46%;
   border: none;
@@ -669,25 +685,148 @@ input {
   margin-right: 20px;
   margin-bottom: 50px;
 }
-
-textarea {
+.comment-form input::-webkit-input-placeholder {
+  opacity: 1;
+  color: #151514;
+}
+.comment-form input::-moz-placeholder {
+  opacity: 1;
+  color: #151514;
+}
+.comment-form input:-ms-input-placeholder {
+  opacity: 1;
+  color: #151514;
+}
+.comment-form input::-ms-input-placeholder {
+  opacity: 1;
+  color: #151514;
+}
+.comment-form input::placeholder {
+  opacity: 1;
+  color: #151514;
+}
+.comment-form .comment-box {
   resize: none;
   background: #E0FDDF;
   border: 2px solid #151514;
   width: 100%;
 }
-textarea ::-webkit-input-placeholder {
-  margin: 20px;
+.comment-form .comment-box::-webkit-input-placeholder {
+  opacity: 1;
+  color: #151514;
 }
-textarea ::-moz-placeholder {
-  margin: 20px;
+.comment-form .comment-box::-moz-placeholder {
+  opacity: 1;
+  color: #151514;
 }
-textarea :-ms-input-placeholder {
-  margin: 20px;
+.comment-form .comment-box:-ms-input-placeholder {
+  opacity: 1;
+  color: #151514;
 }
-textarea ::-ms-input-placeholder {
-  margin: 20px;
+.comment-form .comment-box::-ms-input-placeholder {
+  opacity: 1;
+  color: #151514;
 }
-textarea ::placeholder {
-  margin: 20px;
+.comment-form .comment-box::placeholder {
+  opacity: 1;
+  color: #151514;
+}
+
+#contact-main {
+  background: #E0FDDF;
+  height: 80vh;
+}
+
+.form-container {
+  background: #f5f5f5;
+  width: 60%;
+  z-index: 10;
+  padding: 50px;
+  -webkit-box-shadow: 10px 10px 1px #f8fb05;
+          box-shadow: 10px 10px 1px #f8fb05;
+}
+.form-container input {
+  width: 46%;
+  border: none;
+  background: #f5f5f5;
+  border-bottom: 2px solid #151514;
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+.form-container input::-webkit-input-placeholder {
+  opacity: 1;
+  color: #151514;
+}
+.form-container input::-moz-placeholder {
+  opacity: 1;
+  color: #151514;
+}
+.form-container input:-ms-input-placeholder {
+  opacity: 1;
+  color: #151514;
+}
+.form-container input::-ms-input-placeholder {
+  opacity: 1;
+  color: #151514;
+}
+.form-container input::placeholder {
+  opacity: 1;
+  color: #151514;
+}
+
+.message-box {
+  resize: none;
+  background: #f5f5f5;
+  border: 2px solid #151514;
+  width: 94%;
+}
+.message-box::-webkit-input-placeholder {
+  opacity: 1;
+  color: #151514;
+}
+.message-box::-moz-placeholder {
+  opacity: 1;
+  color: #151514;
+}
+.message-box:-ms-input-placeholder {
+  opacity: 1;
+  color: #151514;
+}
+.message-box::-ms-input-placeholder {
+  opacity: 1;
+  color: #151514;
+}
+.message-box::placeholder {
+  opacity: 1;
+  color: #151514;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.socials li {
+  padding: 20px;
+  font-size: 1.5rem;
+}
+.socials li a {
+  color: #065635;
+}
+
+.address {
+  padding-left: 20px;
+}
+
+#contact {
+  background-image: url(../assets/contact-image.jpg);
 }

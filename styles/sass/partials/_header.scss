@@ -44,13 +44,14 @@
 
 //blog page header styles
 
-.blog-logo {
+.logo {
     position: absolute;
     top: 20px;
     left: 75px;
 }
 
-.blog-menu {
+.blog-menu,
+.contact-menu {
     display:flex;
     justify-content: flex-end;
     margin-right: 200px;
@@ -78,5 +79,15 @@
         font-family: variables.$h1-font;
         font-size: 68px;
         text-transform: capitalize;
+    }
+}
+
+#contact {
+    background-image: url(../assets/contact-image.jpg);
+    height: 78vh;
+    h1 {
+        position: absolute;
+        top: 150px;
+        left: 150px;
     }
 }
