@@ -1,6 +1,6 @@
 @use "./variables";
 
-//Comment form styles
+//Comment form styles (blog page)
 
 .comment-form {
     margin-left: 30px;
@@ -28,20 +28,25 @@
             }
         
     }
+    
 }
 
 // Contact page form
 #contact-main {
     background: variables.$ice;
-    height: 80vh;
+    height: 70vh;
 }
 
 .form-container {
     background: variables.$white;
-    width: 60%;
+    width: 70%;
+    height: 75vh;
     z-index: 10;
     padding: 50px;
-    box-shadow: 10px 10px 1px variables.$bright-yellow;
+    box-shadow: 25px 25px 1px variables.$bright-yellow;
+    position: relative;
+    top: -200px;
+    left: -50px;
     input {
     width: 46%;
     border: none;
@@ -49,7 +54,8 @@
     border-bottom: 2px solid variables.$black;
     margin-right: 20px;
     margin-bottom: 50px;
-    &::placeholder {
+    padding: 20px;
+        &::placeholder {
         opacity: 1;
         color: variables.$black;
     }
@@ -61,17 +67,23 @@
         background: variables.$white;
         border: 2px solid variables.$black;
         width: 94%;
+        padding: 20px;
         &::placeholder {
             opacity: 1;
             color: variables.$black;
         }
     }
 
+    .contact-button {
+        width: 94%;
+        margin: 20px 0;
+    }
+
 //Contact form flex
 
 .contact {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 

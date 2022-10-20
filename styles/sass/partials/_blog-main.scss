@@ -17,14 +17,27 @@
             background: variables.$white;
             padding: 50px;
             position: relative;
-            padding-top: 550px;
+            padding-top: 460px;
+            height: 160vh;
             border-right: 5px solid variables.$bright-yellow;
             border-bottom: 5px solid variables.$bright-yellow;
+            h2 {
+                margin-bottom: 30px;
+            }
+            .date {
+                font-style: italic;
+                span {
+                    font-weight: bold;
+                }
+            p {
+                margin: 20px 0;
+            }
+            }
             .blog-image {
-                width: 99.2%;
+                width: 100.5%;
                 position: absolute;
                 top: -50px;
-                left: 0;
+                left: -10px;
                 box-shadow: 10px 10px 1px variables.$bright-yellow;
         }
     }
@@ -60,7 +73,7 @@
 
 aside {
     width: 25%;
-    height: 115vh;
+    height: 125vh;
     background: variables.$bright-yellow;
     margin-top: 100px;
     .aside-img {

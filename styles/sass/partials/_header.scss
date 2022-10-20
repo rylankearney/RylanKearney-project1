@@ -8,7 +8,6 @@
     background-size: cover;
     height: 90vh;
     h1 {
-        /*margin: 50px;*/
         line-height: 1;
         position: absolute;
         top: 50px;
@@ -21,7 +20,7 @@
    img {
     width: 52%;
     position: absolute;
-    bottom: -50px;
+    bottom: -90px;
     }
 }
 
@@ -29,7 +28,7 @@
 .home-desktop-nav {
     ul {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     margin-right: 100px;
     }
     a {
@@ -44,7 +43,7 @@
 
 //blog page header styles
 
-.logo {
+h1.logo {
     position: absolute;
     top: 20px;
     left: 75px;
@@ -54,19 +53,21 @@
 .contact-menu {
     display:flex;
     justify-content: flex-end;
-    margin-right: 200px;
-    li {
-        margin-top: 20px;
-        a {
-        margin: 20px 20px 0;
-        padding: 0 5px;
-        &:hover,
-        &:focus {
-            border-bottom: 4px solid variables.$bright-yellow;
+    margin-right: 100px;
+        li {
+            margin-bottom: 15px;
+            a {
+            margin: 0 20px;
+            padding: 0 5px;
+            &:hover,
+            &:focus {
+                border-bottom: 4px solid variables.$bright-yellow;
+            }
+
         }
     }
 }
-}
+
 
 #blog-header {
     background-image: url(../assets/blog-image.jpg);
@@ -74,20 +75,31 @@
     height: 80vh;
     h3 {
         position: absolute;
-        top: 150px;
+        top: 200px;
         left: 300px;
         font-family: variables.$h1-font;
         font-size: 68px;
-        text-transform: capitalize;
+        text-transform: uppercase;
     }
 }
+
+
+//Contact page header
 
 #contact {
     background-image: url(../assets/contact-image.jpg);
     height: 78vh;
     h1 {
-        position: absolute;
-        top: 150px;
+        position: relative;
+        left: 80px;
+        top: 30px;
+    }
+    h2 {
+        position: relative;
+        top: 100px;
         left: 150px;
+        font-family: variables.$h1-font;
+        font-size: 68px;
     }
 }
+
