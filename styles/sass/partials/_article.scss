@@ -1,14 +1,22 @@
 @use "./variables";
 
 #about {
-    height: 60vh;
+    height: 62vh;
 }
 
 .home-article-flex {
     display: flex;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 140px;
     article {
         margin-left: 40px;
+        h2,
+        p,
+        button {
+            margin-top: 20px;
+        }
+        p {
+            width: 90%;
+        }
     }
 }

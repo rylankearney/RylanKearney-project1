@@ -17,6 +17,7 @@
             color: variables.$black;
         }
     }
+
         .comment-box {
             resize: none;
             background: variables.$ice;
@@ -40,12 +41,12 @@
 .form-container {
     background: variables.$white;
     width: 70%;
-    height: 75vh;
+    height: 78vh;
     z-index: 10;
     padding: 50px;
     box-shadow: 25px 25px 1px variables.$bright-yellow;
     position: relative;
-    top: -200px;
+    top: -100px;
     left: -50px;
     input {
     width: 46%;
@@ -73,6 +74,7 @@
             color: variables.$black;
         }
     }
+    
 
     .contact-button {
         width: 94%;

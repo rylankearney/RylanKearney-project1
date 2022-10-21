@@ -357,7 +357,8 @@ textarea:focus {
 .home-header {
   position: relative;
   background-image: url(../assets/header-home.jpg);
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
   height: 90vh;
 }
 .home-header h1 {
@@ -376,7 +377,7 @@ textarea:focus {
   bottom: -90px;
 }
 
-.home-desktop-nav ul {
+.desktop-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,54 +386,50 @@ textarea:focus {
           justify-content: flex-end;
   margin-right: 100px;
 }
-.home-desktop-nav a {
-  padding: 5px;
+.desktop-nav li {
+  margin-bottom: 15px;
+}
+.desktop-nav li a {
+  padding: 10px;
   margin: 30px 15px 5px;
 }
-.home-desktop-nav a:hover, .home-desktop-nav a:focus {
+.desktop-nav li a:hover, .desktop-nav li a:focus {
   border-bottom: 4px solid #f8fb05;
 }
 
 h1.logo {
   position: absolute;
   top: 20px;
-  left: 75px;
+  left: 200px;
 }
 
-.blog-menu,
+/*.blog-menu,
 .contact-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-right: 100px;
-}
-.blog-menu li,
-.contact-menu li {
-  margin-bottom: 15px;
-}
-.blog-menu li a,
-.contact-menu li a {
-  margin: 0 20px;
-  padding: 0 5px;
-}
-.blog-menu li a:hover, .blog-menu li a:focus,
-.contact-menu li a:hover,
-.contact-menu li a:focus {
-  border-bottom: 4px solid #f8fb05;
-}
+    display:flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+        li {
+            margin-bottom: 15px;
+            a {
+            margin: 0 20px;
+            padding: 0 5px;
+            &:hover,
+            &:focus {
+                border-bottom: 4px solid variables.$bright-yellow;
+            }
 
+        }
+    }
+}*/
 #blog-header {
   background-image: url(../assets/blog-image.jpg);
-  width: 100%;
-  height: 80vh;
+  background-size: 125%;
+  height: 65vh;
 }
 #blog-header h3 {
   position: absolute;
   top: 200px;
-  left: 300px;
+  left: 200px;
   font-family: "Kumar One Outline";
   font-size: 68px;
   text-transform: uppercase;
@@ -440,7 +437,9 @@ h1.logo {
 
 #contact {
   background-image: url(../assets/contact-image.jpg);
-  height: 78vh;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 55vh;
 }
 #contact h1 {
   position: relative;
@@ -456,7 +455,7 @@ h1.logo {
 }
 
 #about {
-  height: 60vh;
+  height: 62vh;
 }
 
 .home-article-flex {
@@ -466,10 +465,18 @@ h1.logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 100px;
+  margin-top: 140px;
 }
 .home-article-flex article {
   margin-left: 40px;
+}
+.home-article-flex article h2,
+.home-article-flex article p,
+.home-article-flex article button {
+  margin-top: 20px;
+}
+.home-article-flex article p {
+  width: 90%;
 }
 
 .gallery {
@@ -487,15 +494,15 @@ h1.logo {
           align-items: center;
 }
 .gallery .gallery-flex li {
-  width: calc(33.3333333333% - 30px);
-  margin: 100px 15px 0;
+  width: calc(33.3333333333% - 10px);
+  margin: 100px 5px 0;
 }
 .gallery .gallery-flex li img {
   height: 325px;
 }
 
 #features {
-  height: 80vh;
+  height: 90vh;
 }
 
 .fa-house,
@@ -547,20 +554,20 @@ h1.logo {
 
 .corners {
   background: #E0FDDF;
-  height: 112vh;
+  height: 102vh;
   position: relative;
 }
 .corners .text-container-1 {
   position: absolute;
-  right: 200px;
+  right: 100px;
   top: 100px;
-  width: 30%;
+  width: 40%;
 }
 .corners .text-container-2 {
   position: absolute;
   bottom: 100px;
-  left: 200px;
-  width: 30%;
+  left: 100px;
+  width: 40%;
 }
 .corners .img-container-1 {
   width: 50%;
@@ -572,10 +579,11 @@ h1.logo {
   top: -50px;
   left: 0;
 }
-.corners .img-container-2 {
+
+.img-container-2 {
   width: 50%;
 }
-.corners .img-container-2 img {
+.img-container-2 img {
   display: block;
   -webkit-box-shadow: -10px 10px 1px #f8fb05;
           box-shadow: -10px 10px 1px #f8fb05;
@@ -583,6 +591,10 @@ h1.logo {
   bottom: -50px;
   right: 0;
   z-index: 10;
+}
+
+.corners-button {
+  margin-top: 20px;
 }
 
 footer {
@@ -615,7 +627,7 @@ footer p {
   padding: 50px;
   position: relative;
   padding-top: 460px;
-  height: 160vh;
+  height: 165vh;
   border-right: 5px solid #f8fb05;
   border-bottom: 5px solid #f8fb05;
 }
@@ -666,7 +678,7 @@ footer p {
 
 aside {
   width: 25%;
-  height: 125vh;
+  height: 123vh;
   background: #f8fb05;
   margin-top: 100px;
 }
@@ -688,8 +700,9 @@ aside .aside-img img {
 .aside-text h4 {
   margin-top: 20px;
 }
-.aside-text .blog-list {
+.aside-text .blog-list li {
   list-style-type: disc;
+  margin-left: 15px;
 }
 
 .comment-form {
@@ -759,13 +772,13 @@ aside .aside-img img {
 .form-container {
   background: #f5f5f5;
   width: 70%;
-  height: 75vh;
+  height: 78vh;
   z-index: 10;
   padding: 50px;
   -webkit-box-shadow: 25px 25px 1px #f8fb05;
           box-shadow: 25px 25px 1px #f8fb05;
   position: relative;
-  top: -200px;
+  top: -100px;
   left: -50px;
 }
 .form-container input {
@@ -854,4 +867,89 @@ aside .aside-img img {
 
 .address {
   padding-left: 20px;
+}
+
+@media (max-width: 1320px) {
+  .corners .img-container-1 img,
+.corners .img-container-2 img {
+    width: 45%;
+  }
+  .corners .text-container-1 {
+    right: 50px;
+  }
+  .corners .text-container-2 {
+    left: 50px;
+  }
+  .home-header h1 {
+    left: 150px;
+  }
+  .desktop-nav ul {
+    margin-right: 50px;
+  }
+  .comment-form input {
+    width: 100%;
+  }
+  aside .aside-text {
+    padding-top: 150px;
+  }
+  .blog-main .blog-entry .blog-container {
+    padding-top: 400px;
+  }
+}
+@media (max-width: 1235px) {
+  .blog-main .blog-entry .blog-container {
+    padding-top: 360px;
+    height: 175vh;
+  }
+  .blog-main .blog-entry .comment-container {
+    width: 100%;
+  }
+  .blog-main aside .aside-text {
+    padding-top: 100px;
+  }
+}
+@media (max-width: 1120px) {
+  .home-header h1 {
+    left: 100px;
+  }
+  .home-header img {
+    width: 60%;
+  }
+  .desktop-nav ul {
+    margin-right: 0;
+  }
+  .gallery .gallery-flex li img {
+    width: 300px;
+  }
+  #about {
+    height: 67vh;
+  }
+  .blog-main .blog-entry .blog-container {
+    padding-top: 360px;
+    height: 185vh;
+  }
+  #contact-main {
+    height: auto;
+  }
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .form-container {
+    left: 0;
+  }
+  .contact .contact-info-container {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .contact .contact-info-container .socials {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact .contact-info-container .address {
+    padding-left: 0;
+  }
 }

@@ -2,19 +2,19 @@
 
 .corners {
     background: variables.$ice;
-    height: 112vh;
+    height: 102vh;
     position: relative;
     .text-container-1 {
         position:absolute;
-        right: 200px;
+        right: 100px;
         top: 100px;
-        width: 30%;
+        width: 40%;
     }
     .text-container-2 {
         position: absolute;
         bottom: 100px;
-        left: 200px;
-        width: 30%;
+        left: 100px;
+        width: 40%;
     }
     .img-container-1 {
         width: 50%;
@@ -25,6 +25,7 @@
             left: 0;
         }
     }
+}
     .img-container-2 {
         width: 50%;
         img {
@@ -35,6 +36,10 @@
             right: 0;
             z-index: 10;
             }
+
+        }
+    
+    .corners-button {
+        margin-top: 20px;
     }
-}
 

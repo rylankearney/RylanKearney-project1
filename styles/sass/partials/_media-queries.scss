@@ -1,0 +1,135 @@
+@use "./variables";
+
+@media (max-width: 1320px) {
+    .corners {
+        .img-container-1,
+        .img-container-2{
+            img {
+                width: 45%;
+            }
+        }
+        .text-container-1 {
+            right: 50px;
+        }
+        .text-container-2 {
+            left: 50px;
+        }
+    }
+
+    .home-header {
+        h1 {
+            left: 150px;
+        }
+    }
+
+    .desktop-nav {
+        ul {
+            margin-right: 50px;
+        }
+    }
+
+    .comment-form {
+        input {
+            width: 100%;
+        }
+    }
+
+    aside {
+        .aside-text {
+            padding-top: 150px;
+        }
+    }
+
+    .blog-main {
+        .blog-entry {
+            .blog-container {
+                padding-top: 400px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1235px) {
+    .blog-main {
+        .blog-entry {
+            .blog-container {
+                padding-top: 360px;
+                height: 175vh;
+            }
+            .comment-container {
+                width: 100%;
+                
+            }
+        }
+        aside {
+            .aside-text {
+                padding-top: 100px;
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width: 1120px) {
+    .home-header {
+        h1 {
+        left: 100px;
+        }
+        img {
+            width: 60%;
+        }
+    }
+
+
+    .desktop-nav{
+        ul {
+            margin-right: 0;
+        }
+    }
+
+    .gallery {
+        .gallery-flex {
+            li {
+                img {
+                    width: 300px;
+                }
+            }
+        }
+    }
+
+    #about {
+        height: 67vh;
+    }
+
+    .blog-main {
+        .blog-entry {
+            .blog-container {
+                padding-top: 360px;
+                height: 185vh;
+            }
+        }
+    }
+
+    #contact-main {
+        height: auto;
+    }
+
+    .contact {
+        flex-direction: column;
+        .form-container {
+            left: 0;
+        }
+        .contact-info-container {
+            text-align: center;
+            margin-bottom: 40px;
+            .socials {
+                justify-content: center;
+            }
+            .address {
+                padding-left: 0;
+            }
+        }
+    }
+}
