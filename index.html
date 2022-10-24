@@ -11,6 +11,7 @@
 <body>
 <!--Header-->
     <header class="home-header">
+    <!--desktop menu starts-->
         <nav class="desktop-nav">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -19,6 +20,29 @@
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
+    <!--desktop menu ends-->
+    <!--mobile menu starts-->
+            <div class="burger-menu">
+                    
+                <!-- menu -->
+                <nav class="mobile-nav">
+                        <ul class="mobile-menu">
+                            <li>
+                                <a href="./index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="./index.html/#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                </nav>
+            </div>
+            <!--mobile menu ends-->
         <h1>Sanctuary <span>Helpers</span></h1>
         <img src="./assets/header-box.png" alt="Two comfy blue chairs side by side" class="home-header-img">
     </header>
@@ -27,6 +51,7 @@
     <main>
         <section id="about">
             <div class="wrapper home-article-flex">
+
                 <article>
                     <h2>Discovering New Materials</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, mollitia! Optio nemo minima tempora, similique rerum totam rem sint, cumque nostrum necessitatibus nam alias recusandae qui assumenda iusto quidem molestiae commodi et libero dolorem. Et officiis recusandae ipsum doloremque ullam nisi, animi rerum vel illo perspiciatis minima impedit repellat saepe.</p>
@@ -103,21 +128,25 @@
     <!--four corners section starts-->
         <section class="four-corners">
             <div class="corners">
-                <div class="img-container-1">
-                    <img src="./assets/left-image.jpg" alt="dining room chair and table topped with a bonsai tree">
+                <div class="corners-container-1">
+                    <div class="img-container-1">
+                        <img src="./assets/left-image.jpg" alt="dining room chair and table topped with a bonsai tree">
+                    </div>
+                    <div class="text-container-1">
+                        <h2>Group Programs</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus incidunt eveniet porro, cum sapiente placeat.</p>
+                        <button class="corners-button">Read More</button>
+                    </div>
                 </div>
-                <div class="text-container-1">
-                    <h2>Group Programs</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus incidunt eveniet porro, cum sapiente placeat.</p>
-                    <button class="corners-button">Read More</button>
-                </div>
-                <div class="text-container-2">
-                    <h2>New Locations</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus incidunt eveniet porro, cum sapiente placeat.</p>
-                    <button class="corners-button">Read More</button>
-                </div>
-                <div class="img-container-2">
-                    <img src="./assets/right-image.jpg" alt="blue and white patio with wicker furnishings">
+                <div class="corners-container-2">
+                    <div class="text-container-2">
+                        <h2>New Locations</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus incidunt eveniet porro, cum sapiente placeat.</p>
+                        <button class="corners-button">Read More</button>
+                    </div>
+                    <div class="img-container-2">
+                        <img src="./assets/right-image.jpg" alt="blue and white patio with wicker furnishings">
+                    </div>
                 </div>
             </div>
         </section>

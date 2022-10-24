@@ -45,6 +45,51 @@
     }
 } 
 
+//mobile menu styles
+.burger-menu{
+    background-color: #F5F5F5;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    .mobile-nav {
+        .mobile-menu {
+            li {
+                padding: 0 10px;
+            }
+        }
+    }
+}
+
+
+
+.logo {
+    display: inline-block;
+    color: #151514;
+    font-family: 'Kumar One', cursive;
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 1.2px;
+}
+
+
+
+
+.mobile-menu {
+    display: flex;
+    justify-content: end;
+    padding: 10px 30px;
+    color: #151514;
+}
+.mobile-menu a:hover{
+    color: #065635;
+}
+
+
+
+.burger-menu {
+    visibility: hidden;
+}
+
 //blog page header styles
 
 h1.logo {
@@ -53,29 +98,13 @@ h1.logo {
     left: 200px;
 }
 
-/*.blog-menu,
-.contact-menu {
-    display:flex;
-    justify-content: flex-end;
-    margin-right: 100px;
-        li {
-            margin-bottom: 15px;
-            a {
-            margin: 0 20px;
-            padding: 0 5px;
-            &:hover,
-            &:focus {
-                border-bottom: 4px solid variables.$bright-yellow;
-            }
 
-        }
-    }
-}*/
 
 
 #blog-header {
     background-image: url(../assets/blog-image.jpg);
     background-size: 125%;
+    background-repeat: no-repeat;
     height: 65vh;
     h3 {
         position: absolute;
@@ -95,15 +124,16 @@ h1.logo {
     background-repeat: no-repeat;
     background-size: 100%;
     height: 55vh;
+    overflow: hidden;
     h1 {
         position: relative;
         left: 80px;
-        top: 30px;
+        top: -30px;
     }
     h2 {
         position: relative;
-        top: 100px;
-        left: 150px;
+        top: 10px;
+        left: 100px;
         font-family: variables.$h1-font;
         font-size: 68px;
     }
