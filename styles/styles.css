@@ -656,7 +656,6 @@ footer p {
 }
 .blog-main .blog-entry .blog-container h2 {
   margin-bottom: 30px;
-  padding-top: 100px;
 }
 .blog-main .blog-entry .blog-container .date {
   font-style: italic;
@@ -919,17 +918,11 @@ aside .aside-img img {
   .blog-main .blog-entry .blog-container {
     padding-top: 400px;
   }
-  .blog-main .blog-entry .blog-container h2 {
-    padding-top: 70px;
-  }
 }
 @media (max-width: 1235px) {
   .blog-main .blog-entry .blog-container {
     padding-top: 360px;
     height: 175vh;
-  }
-  .blog-main .blog-entry .blog-container h2 {
-    padding-top: 30px;
   }
   .blog-main .blog-entry .comment-container {
     width: 100%;
@@ -1014,9 +1007,6 @@ aside .aside-img img {
   .blog-main .blog-entry .blog-container {
     padding-top: 310px;
   }
-  .blog-main .blog-entry .blog-container h2 {
-    padding-top: 0;
-  }
   aside {
     height: 130vh;
   }
@@ -1064,8 +1054,8 @@ aside .aside-img img {
   }
   .blog-main aside .aside-text {
     padding-top: 80px;
-    }
-  #contact h2 {
+  }
+  h2 {
     top: 80px;
     left: 120px;
   }
@@ -1145,9 +1135,6 @@ input,
     padding-top: 550px;
     height: auto;
   }
-  .blog-main .blog-entry .blog-container h2 {
-    padding-top: 180px;
-  }
   .blog-main .blog-entry .comment-container {
     margin-left: 20px;
   }
@@ -1217,9 +1204,6 @@ input,
   .blog-main .blog-entry .blog-container {
     padding-top: 460px;
   }
-  .blog-main .blog-entry .blog-container h2 {
-    padding-top: 110px;
-  }
   #contact {
     height: 30vh;
   }
@@ -1265,34 +1249,27 @@ input,
     bottom: 200px;
     left: 20px;
   }
+  .search .search-text {
+    width: 100%;
+  }
+  #blog-header {
+    height: 30vh;
+  }
+  #blog-header h3 {
+    font-size: 45px;
+    left: 120px;
+  }
+  .blog-main .blog-entry .blog-container {
+    padding-top: 350px;
+  }
+  #contact h2 {
+    left: 20px;
+  }
+  #contact .form-container {
+    top: 10px;
+    padding: 10px;
+  }
 }
-.search .search-text {
-  width: 100%;
-}
-
-#blog-header {
-  height: 30vh;
-}
-#blog-header h3 {
-  font-size: 45px;
-  left: 120px;
-}
-
-.blog-main .blog-entry .blog-container {
-  padding-top: 350px;
-}
-.blog-main .blog-entry .blog-container h2 {
-  padding-top: 0;
-}
-
-#contact h2 {
-  left: 20px;
-}
-#contact .form-container {
-  top: 10px;
-  padding: 10px;
-}
-
 @media (max-width: 500px) {
   .home-header h1 {
     top: 200px;

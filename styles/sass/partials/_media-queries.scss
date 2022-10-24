@@ -44,9 +44,6 @@
         .blog-entry {
             .blog-container {
                 padding-top: 400px;
-                h2 {
-                    padding-top: 70px;
-                }
             }
         }
     }
@@ -58,9 +55,8 @@
             .blog-container {
                 padding-top: 360px;
                 height: 175vh;
-                h2 {
-                    padding-top: 30px;
-                }
+
+                
             }
             .comment-container {
                 width: 100%;
@@ -189,9 +185,6 @@
         .blog-entry {
             .blog-container {
                 padding-top: 310px;
-                h2 {
-                    padding-top: 0;
-                }
             }
         }
     }
@@ -229,10 +222,11 @@
 
 @media (max-width: 1000px) {
 
-    .home-header 
+    .home-header {
         h1{
          font-size: 55px;
          top: 130px;
+        }
     }
 
     #about {
@@ -271,16 +265,13 @@
         }
     }
 
-    #contact {
-       /* .wrapper {
-            overflow: hidden;
-        }*/
+
 
         h2 {
             top: 80px;
             left: 120px;
         }
-    }
+    
 
     .contact-logo {
         display: none;
@@ -295,8 +286,8 @@
     .mobile-nav {
         visibility: visible;
     }
-
 }
+
 
 @media (max-width: 935px) {
 
@@ -371,9 +362,7 @@
                 .blog-container {
                     padding-top: 550px;
                     height: auto;
-                    h2 {
-                        padding-top: 180px;
-                    }
+
                 }
                 .comment-container {
                     margin-left: 20px;
@@ -448,9 +437,7 @@
         .blog-entry
             .blog-container {
                 padding-top: 460px;
-                h2 {
-                    padding-top: 110px;
-                }
+
         }
     
         #contact {
@@ -468,81 +455,80 @@
 
 @media (max-width: 610px) {
 
-    .home-header {
-        height: 40vh;
-        h1 {
-            font-size: 35px;
-            left: 20px;
-            top: 100px;
-        }
-    }
-
-    .home-article-flex {
-        img {
-            width: 70%;
-        }
-    }
-
-    .corners {
-        height: 120vh;
-        overflow: hidden;
-        .img-container-1 {
-            img {
-                top: 0;
-                left: 0;
-                width:55%;
+        .home-header {
+            height: 40vh;
+            h1 {
+                font-size: 35px;
+                left: 20px;
+                top: 100px;
             }
         }
-        .img-container-2 {
+
+        .home-article-flex {
             img {
-                bottom:10px;
-                width: 55%;
+                width: 70%;
             }
         }
-        .text-container-1 {
-            width: 100%;
-            top: 220px;
-            right: -20px;
-        }
-        .text-container-2 {
-            width: 100%;
-            bottom: 200px;
-            left: 20px;
-        }
-        }
-    }
 
-    .search {
-        .search-text {
-            width: 100%;
+        .corners {
+            height: 120vh;
+            overflow: hidden;
+            .img-container-1 {
+                img {
+                    top: 0;
+                    left: 0;
+                    width:55%;
+                }
+            }
+            .img-container-2 {
+                img {
+                    bottom:10px;
+                    width: 55%;
+                }
+            }
+            .text-container-1 {
+                width: 100%;
+                top: 220px;
+                right: -20px;
+            }
+            .text-container-2 {
+                width: 100%;
+                bottom: 200px;
+                left: 20px;
+            }
+            
         }
-    }
 
-    #blog-header {
-        height: 30vh;
-        h3 {
-            font-size: 45px;
-            left: 120px;
+        .search {
+            .search-text {
+                width: 100%;
+            }
         }
-    }
 
-    .blog-main
-    .blog-entry
-        .blog-container {
-            padding-top: 350px;
+        #blog-header {
+            height: 30vh;
+            h3 {
+                font-size: 45px;
+                left: 120px;
+            }
+        }
+
+        .blog-main
+        .blog-entry
+            .blog-container {
+                padding-top: 350px;
+
+        }
+
+        #contact {
             h2 {
-                padding-top: 0;
+                left: 20px;
+            }
+            .form-container {
+                top: 10px;
+                padding: 10px;
             }
     }
-
-    #contact {
-        h2 {
-            left: 20px;
-        }
-        .form-container {
-            top: 10px;
-            padding: 10px;
-        }
 }
 
 
