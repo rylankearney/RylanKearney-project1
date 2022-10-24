@@ -349,7 +349,7 @@ button {
   text-transform: uppercase;
 }
 
-input:focus,
+input:hover,
 textarea:focus {
   outline: none;
 }
@@ -427,7 +427,8 @@ textarea:focus {
   color: #151514;
 }
 
-.mobile-menu a:hover {
+.mobile-menu a:hover,
+.mobile-menu a:focus {
   color: #065635;
 }
 
@@ -564,7 +565,7 @@ h1.logo {
 }
 .search .search-text {
   text-align: center;
-  width: 40%;
+  width: 50%;
   height: 45vh;
 }
 .search .search-text h2 {
@@ -1063,11 +1064,7 @@ aside .aside-img img {
   }
   .blog-main aside .aside-text {
     padding-top: 80px;
-  }
-  #contact .wrapper {
-    overflow: hidden;
-    display: none;
-  }
+    }
   #contact h2 {
     top: 80px;
     left: 120px;

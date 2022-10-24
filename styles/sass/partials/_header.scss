@@ -80,7 +80,8 @@
     padding: 10px 30px;
     color: #151514;
 }
-.mobile-menu a:hover{
+.mobile-menu a:hover,
+.mobile-menu a:focus {
     color: #065635;
 }
 
