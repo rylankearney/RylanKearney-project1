@@ -100,16 +100,19 @@
                         <form action="#" method="#" name="inquiries" class="comment-form">
                             <div>
                                 <label for="name">Name</label>
-                                <input type="text" id="name" name="name" placeholder="Name">
+                                <input type="text" id="name" name="name" placeholder="Name" required>
                                 <label for="email">E-mail</label>
-                                <input type="email" id="email" name="email" placeholder="email address">
+                                <input type="email" id="email" name="email" placeholder="email address" required>
                             </div>
                             <div>
                                 <label for="message">Message</label>
-                                <textarea name="message" id="message" cols="40" rows="10" placeholder="comment" class="comment-box"></textarea>
+                                <textarea name="message" id="message" cols="40" rows="10" placeholder="comment" class="comment-box" required></textarea>
                             </div>
                             <button>Post Comment</button>
                         </form>
+                        <div class="post-comment">
+                            <!--will add confirmation notice here-->
+                        </div>
                 </div><!--end of .comment-container-->
             </div><!--end of .blog-entry-->   
             <!--start of aside-->          
@@ -140,5 +143,56 @@
     <footer>
         <p>Copyright <i class="fa-regular fa-copyright" alt="Copyright logo"></i> 2019 HackerYou</p>
     </footer>
+
+    <script>
+        //Goal: To give the user a message saying their comment has been submitted for review 
+
+        //Step 1 Listen for when the form submits
+        //store form element in a variable using document.querySelector
+
+
+        const formElement = document.querySelector("form");
+        const nameInputElement = document.querySelector("#name");
+        const emailInputElement = document.querySelector("#email");
+        const textAreaElement = document.querySelector("textarea");
+        
+        //add a variable for the div.confirmed element 
+        const divElement = document.querySelector(".post-comment");
+        
+        //add event listener when the button gets clicked
+        formElement.addEventListener("submit", function(event){
+        event.preventDefault();
+ 
+
+
+        //storing value from inputs in variables
+        const name = nameInputElement.value;
+        const email = emailInputElement.value;
+        const message = textAreaElement.value;
+       
+
+        if (name, email, message) {}
+        
+        
+        const pConfirmElement = document.createElement('p');
+        pConfirmElement.innerHTML = 'Comment submitted! Thank you.';
+        
+        
+
+        //adding text to the confirmation message
+        pConfirmElement.textContent = 'Comment submitted! Thank you.'
+        
+
+        //appending the paragraph message as a child of the div.confirm
+        divElement.appendChild(pConfirmElement);
+
+
+        //clearing the input boxes upon submission
+        nameInputElement.value = "";
+        emailInputElement.value = "";
+        textAreaElement.value = "";
+        
+    });
+    </script>
 </body>
 </html>
